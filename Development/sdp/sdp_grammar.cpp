@@ -158,8 +158,7 @@ namespace sdp
                     {
                         if (!each.is_null())
                         {
-                            if (!s.empty()) s += format_delimiter;
-                            s += converter.format(each);
+                            s += converter.format(each) + format_delimiter;
                         }
                     }
                     return s;
